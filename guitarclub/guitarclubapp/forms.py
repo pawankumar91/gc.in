@@ -8,6 +8,7 @@ from models import UserProfile
 from models import userFollowActivity
 from models import Choices
 from models import multiChoice
+from models import Generes
 
 class MyRegistrationForm(UserCreationForm):
 
@@ -67,3 +68,17 @@ class multiChoiceForm(forms.ModelForm):
     class Meta:
         model=multiChoice
         fields=("Countries",)
+
+#PopUp for generes liked
+
+Select_Generes  = (('Alternative','Alternative'),
+     ('Bangra','Bangra'),
+     ('Classical','Classical'),
+     ('Dhrupad','Dhrupad'),)
+
+class formForm(forms.ModelForm):
+    generes = forms.MultipleChoiceField(label='Music Stlyes that you like', choices=Select_Generes, widget=forms.CheckboxSelectMultiple)
+    class Meta:
+        model=Generes
+        fields=("generes",)
+

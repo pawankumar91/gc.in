@@ -693,4 +693,14 @@ right:8px;
 position:relative;
 display:inline;
 }
+/*Vivek*/
+#AddGenre {
+    display: inline-block;
+    position: relative;
+ margin-bottom:30px;
+ top:-40px;
+ right:2%;
+}
+
+
 /*footer end*/

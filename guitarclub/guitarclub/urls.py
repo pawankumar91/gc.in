@@ -101,6 +101,12 @@ url(r'^friend_list/$', 'guitarclubapp.views.friend_list'),
 
 
 
+#Generes Popup URLs
+        url(r'^accounts/profile_v3/generes/$', 'guitarclubapp.views.generes_view'),
+        url(r'^accounts/profile_v3/$', 'guitarclubapp.views.generes_choose'),
+        url(r'^accounts/profile_v3/generes/return/$', 'guitarclubapp.views.generes_return'),
+        url(r'^accounts/profile/music/$', 'guitarclubapp.views.display'),
+
 
 
 

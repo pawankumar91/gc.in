@@ -380,6 +380,11 @@ models.signals.post_save.connect(
 
 
 
+#################Pop-Up for Generes liked
 
+class Generes(models.Model):
+    user=models.ForeignKey(User)
+    generes = models.TextField(max_length=150, null=False, blank=False)
 
+User.generes=property(lambda u:Generes.objects.get_or_create(user=u)[0])
 

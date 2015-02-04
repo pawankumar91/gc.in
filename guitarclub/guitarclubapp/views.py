@@ -18,8 +18,11 @@ from django.template import RequestContext
 # Create your views here.
 from django.contrib import auth
 
+from forms import formForm
 
+from models import Generes
 
+import string
 
 # Avoid shadowing the login() and logout() views below.
 from django.contrib.auth import REDIRECT_FIELD_NAME, login as auth_login, logout as auth_logout, get_user_model
@@ -263,6 +266,8 @@ def edit_profile(request):
     if request.method == 'POST':
         form = UserProfileForm(request.POST, request.FILES, instance=request.user.profile)
         follow = userFollowActivity.objects.get(user=request.user)
+        generes = Generes.objects.get(user=request.user)
+
         first_name = request.user.first_name
         last_name = request.user.last_name
         if form.is_valid():
@@ -270,7 +275,7 @@ def edit_profile(request):
             return HttpResponseRedirect('/accounts/loggedin/')
     else:
         form=UserProfileForm(instance=request.user.profile)
-
+        generes = Generes.objects.get(user=request.user)
         follow = userFollowActivity.objects.get(user=request.user)
         first_name = request.user.first_name
         last_name = request.user.last_name
@@ -279,7 +284,7 @@ def edit_profile(request):
     args.update(csrf(request))
     args['form']=form
 
-    return render_to_response('editprofilepage.html',  {'form':form , 'follow':follow, 'first_name':first_name , 'last_name':last_name},context_instance=RequestContext(request))
+    return render_to_response('editprofilepage.html',  {'form':form , 'follow':follow, 'first_name':first_name , 'last_name':last_name, 'generes':generes},context_instance=RequestContext(request))
 
 
 #pawan --> bandfollow test
@@ -585,5 +590,42 @@ def test(request):
 
 
 
+#PopUp for generes Liked
+@csrf_protect
+@login_required
+def generes_view(request):
+    args = {}
+    args.update(csrf(request))
+    if request.method == 'POST':
+        form = formForm(request.POST, instance=request.user.generes)
+        if form.is_valid():
+            form.save()
+
+
+
+
+            #return render_to_response(request,'generes_return.html',{'form':form})
+            return HttpResponseRedirect('/accounts/profile_v3/generes/return/')
+    else:
+        form = formForm(instance=request.user.generes)
+    args={}
+    args.update(csrf(request))
+    args['generes']=form
+
+    return render_to_response('choose_generes.html', args,
+        context_instance=RequestContext(request))
+
+
+def generes_choose(request):
+    return render (request,'popup_generes.html')
+
+def generes_return(request):
+    return render (request,'generes_return.html')
+
+#display generes
+#@login_required
+#def display(request):
+#    generes1 = Generes.objects.filter(user=request.user)
+#    return render (request, 'generes_display.html', {'music_generes' : generes1})
 
 

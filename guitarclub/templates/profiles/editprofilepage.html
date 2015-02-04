@@ -37,7 +37,7 @@
                 </div>
                 <div class="search_bar">
                         <li class = "togglemenu icon fontawesome-list scnd-font-color1" >
-                            <ul id="level-onee" class = "pull-right" >
+                            <ul id="level-onee" data-filter="true" class = "pull-right" data-input="#filterBasic-input">
                                 <li ><a href="#">Bands</a></li>
                                 <li ><a href="#">Songs</a></li>
                                 <li ><a href="#">All</a></li>
@@ -46,7 +46,7 @@
                         <li id="box">
                            <form action="/search/" method = "get">
                                     <input type="submit" value="" />
-                                    <input name="q" input type="search" placeholder="Search..." />
+                                    <input id="filterBasic-input"  name="q" input type="search" placeholder="Search..." />
                            </form>
                         </li>
                 </div>
@@ -142,10 +142,31 @@
                         {{follow.bandLikes}}<br>
                     </div>
                     <div class = "profile_add4">
-                        <p>Music Interests</p><br><br>
-                        {{follow.bandFollow}}<br>
-                        {{follow.bandLikes}}<br>
+                        <p>Genres Interested In</p><br><br>
+                         <ul class = "pull-right" id="AddGenre">
+                        <a  href="accounts/profile_v3/generes/return/" onclick="return popitup('/accounts/profile_v3/generes')"
+                        > Add genres you like </a>
+                        </ul>
+                            {{generes.generes}}
+
                     </div>
+<!-- ###################################################Vivek-->
+                    <div>
+                        <script language="javascript" type="text/javascript">
+<!--
+function popitup(url) {
+    newwindow=window.open(url,'{{title}}','height=700,width=550');
+    if (window.focus) {newwindow.focus()}
+    return false;
+}
+
+// -->
+</script>
+
+
+
+                    </div>
+<!--#################################################Vivek-->
                 </div>
                 </div>
 <div class = "footer">

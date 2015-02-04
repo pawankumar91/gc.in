@@ -55,7 +55,7 @@ class BlockUserLinkNode(template.Node):
         else:
             return u''
 
-
+@register.tag
 def add_to_friends(parser, token):
     bits = token.split_contents()
     tag_name, bits = bits[0], bits[1:]
