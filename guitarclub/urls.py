@@ -79,9 +79,10 @@ url(r'^friend_list/$', 'guitarclubapp.views.friend_list'),
 
 ########################################################Friends###########################################
 
-url(r'^friend_requests/$', 'guitarclubapp.views.friend_requests'),
+url(r'^friend_requests/$', 'guitarclubapp.views.friend_requests', name = 'friend_requests'),
 url(r'^friend/add/(?P<to_username>[\+\w\.@-_]+)/$','guitarclubapp.views.friendship_add_friend'),
 url(r'^friend/requests/$','guitarclubapp.views.friendship_request_list'),
+url(r'^view/friends/(?P<username>[\w-]+)/$','guitarclubapp.views.view_friends'),
 
 
 

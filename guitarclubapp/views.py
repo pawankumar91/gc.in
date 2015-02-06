@@ -266,7 +266,7 @@ def edit_profile(request):
     if request.method == 'POST':
         form = UserProfileForm(request.POST, request.FILES, instance=request.user.profile)
         follow = userFollowActivity.objects.get(user=request.user)
-        generes = Generes.objects.get(user=request.user)
+        #generes = Generes.objects.get(user=request.user)
 
 
  #       generes =u','.join(self.cleaned_data['generes'])
@@ -278,7 +278,7 @@ def edit_profile(request):
             return HttpResponseRedirect('/accounts/loggedin/')
     else:
         form=UserProfileForm(instance=request.user.profile)
-        generes = Generes.objects.get(user=request.user)
+        #generes = Generes.objects.get(user=request.user)
 
         follow = userFollowActivity.objects.get(user=request.user)
         first_name = request.user.first_name
@@ -288,7 +288,7 @@ def edit_profile(request):
     args.update(csrf(request))
     args['form']=form
 
-    return render_to_response('editprofilepage.html',  {'form':form , 'follow':follow, 'first_name':first_name , 'last_name':last_name, 'generes':generes}
+    return render_to_response('editprofilepage.html',  {'form':form , 'follow':follow, 'first_name':first_name , 'last_name':last_name}
     ,context_instance=RequestContext(request))
 
 
@@ -421,10 +421,10 @@ def friendship_accept(request, friendship_request_id):
     #id1 = get_object_or_404(request.user.friendship_requests_sent,id=friendship_request_id)
     f_request = FriendshipRequest.objects.get(from_user=friendship_request_id, to_user = request.user)
     #return render_to_response ( 'test.html' , {'id':id})
-
+    from_user = request.user
     #f_request = get_object_or_404(request.user.friendship_requests_received,id=friendship_request_id)
     f_request.accept()
-    return redirect('friendship_view_friends', username=request.user.username)
+    return render(request,'friendship/templatetags/friend_requests.html', {'from_user':form_user})
 
     #return redirect('friendship_requests_detail', friendship_request_id=friendship_request_id)
 
