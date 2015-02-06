@@ -1,0 +1,190 @@
+------------------------------------------------------------
+/usr/local/bin/pip run on Mon Feb  2 00:38:12 2015
+Downloading/unpacking django-follow
+  Getting page https://pypi.python.org/simple/django-follow/
+  URLs to search for versions for django-follow:
+  * https://pypi.python.org/simple/django-follow/
+  Analyzing links from page https://pypi.python.org/simple/django-follow/
+    Found link https://pypi.python.org/packages/source/d/django-follow/django-follow-0.1.tar.gz#md5=b723e2c480959e9f86aa9b8e307293c9 (from https://pypi.python.org/simple/django-follow/), version: 0.1
+    Found link https://pypi.python.org/packages/source/d/django-follow/django-follow-0.2.tar.gz#md5=1a6fc6e8ca5ab2df5718993d013d8124 (from https://pypi.python.org/simple/django-follow/), version: 0.2
+    Found link https://pypi.python.org/packages/source/d/django-follow/django-follow-0.3.tar.gz#md5=2abef7a6f8765097ac8fa7fe260ecc5b (from https://pypi.python.org/simple/django-follow/), version: 0.3
+    Found link https://pypi.python.org/packages/source/d/django-follow/django-follow-0.4.2.tar.gz#md5=fd9d8a85c6051cf219b487d6452c9f96 (from https://pypi.python.org/simple/django-follow/), version: 0.4.2
+    Found link https://pypi.python.org/packages/source/d/django-follow/django-follow-0.4.3.tar.gz#md5=33e9b696d97816164545f2b654dcd16d (from https://pypi.python.org/simple/django-follow/), version: 0.4.3
+    Found link https://pypi.python.org/packages/source/d/django-follow/django-follow-0.4.4.tar.gz#md5=6eddf211714879618539fbb058ff8f2a (from https://pypi.python.org/simple/django-follow/), version: 0.4.4
+    Found link https://pypi.python.org/packages/source/d/django-follow/django-follow-0.4.5.tar.gz#md5=8334750fccb33da1356a03e46dfa139e (from https://pypi.python.org/simple/django-follow/), version: 0.4.5
+    Found link https://pypi.python.org/packages/source/d/django-follow/django-follow-0.4.6.tar.gz#md5=8cb0d982bcfa85aeb1312355926c14b5 (from https://pypi.python.org/simple/django-follow/), version: 0.4.6
+    Found link https://pypi.python.org/packages/source/d/django-follow/django-follow-0.5.0.tar.gz#md5=398da213e3a834a63c829de5e2a6b08a (from https://pypi.python.org/simple/django-follow/), version: 0.5.0
+    Found link https://pypi.python.org/packages/source/d/django-follow/django-follow-0.5.1.tar.gz#md5=650f860da47f81357ad89dbc821b56e2 (from https://pypi.python.org/simple/django-follow/), version: 0.5.1
+    Found link https://pypi.python.org/packages/source/d/django-follow/django-follow-0.5.2.tar.gz#md5=17d13e9ce29d4d30f32bfc0d3e5365ac (from https://pypi.python.org/simple/django-follow/), version: 0.5.2
+    Found link https://pypi.python.org/packages/source/d/django-follow/django-follow-0.5.3.tar.gz#md5=a0a056545c0e504784ccebbcf67f8652 (from https://pypi.python.org/simple/django-follow/), version: 0.5.3
+    Found link https://pypi.python.org/packages/source/d/django-follow/django-follow-0.5.4.tar.gz#md5=c0a458152a9bce6464ce83a47d214281 (from https://pypi.python.org/simple/django-follow/), version: 0.5.4
+    Found link https://pypi.python.org/packages/source/d/django-follow/django-follow-0.5.5.tar.gz#md5=4d9368cbc58fff44089008ec0428d032 (from https://pypi.python.org/simple/django-follow/), version: 0.5.5
+    Found link https://pypi.python.org/packages/source/d/django-follow/django-follow-0.6.1.tar.gz#md5=fb15bf1f9a834d432dfc480f57f54c5a (from https://pypi.python.org/simple/django-follow/), version: 0.6.1
+    Found link https://pypi.python.org/packages/source/d/django-follow/django-follow-0.6.tar.gz#md5=df00d4c6f4cc88d7d6dadfa4ff1de4ec (from https://pypi.python.org/simple/django-follow/), version: 0.6
+    Skipping link http://twitter.com/flashingpumpkin (from https://pypi.python.org/simple/django-follow/); not a file
+  Using version 0.6.1 (newest of versions: 0.6.1, 0.6, 0.5.5, 0.5.4, 0.5.3, 0.5.2, 0.5.1, 0.5.0, 0.4.6, 0.4.5, 0.4.4, 0.4.3, 0.4.2, 0.3, 0.2, 0.1)
+  Downloading django-follow-0.6.1.tar.gz
+  Downloading from URL https://pypi.python.org/packages/source/d/django-follow/django-follow-0.6.1.tar.gz#md5=fb15bf1f9a834d432dfc480f57f54c5a (from https://pypi.python.org/simple/django-follow/)
+  Running setup.py (path:/tmp/pip_build_pakumar1/django-follow/setup.py) egg_info for package django-follow
+    running egg_info
+    creating pip-egg-info/django_follow.egg-info
+    writing pip-egg-info/django_follow.egg-info/PKG-INFO
+    writing top-level names to pip-egg-info/django_follow.egg-info/top_level.txt
+    writing dependency_links to pip-egg-info/django_follow.egg-info/dependency_links.txt
+    writing manifest file 'pip-egg-info/django_follow.egg-info/SOURCES.txt'
+    warning: manifest_maker: standard file '-c' not found
+    
+    reading manifest file 'pip-egg-info/django_follow.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    writing manifest file 'pip-egg-info/django_follow.egg-info/SOURCES.txt'
+  Source in /tmp/pip_build_pakumar1/django-follow has version 0.6.1, which satisfies requirement django-follow
+Installing collected packages: django-follow
+  Running setup.py install for django-follow
+    Running command /usr/local/bin/python2.7 -c "import setuptools, tokenize;__file__='/tmp/pip_build_pakumar1/django-follow/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-1RBMgE-record/install-record.txt --single-version-externally-managed --compile
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.linux-x86_64-2.7
+    creating build/lib.linux-x86_64-2.7/follow
+    copying follow/registry.py -> build/lib.linux-x86_64-2.7/follow
+    copying follow/tests.py -> build/lib.linux-x86_64-2.7/follow
+    copying follow/signals.py -> build/lib.linux-x86_64-2.7/follow
+    copying follow/models.py -> build/lib.linux-x86_64-2.7/follow
+    copying follow/__init__.py -> build/lib.linux-x86_64-2.7/follow
+    copying follow/urls.py -> build/lib.linux-x86_64-2.7/follow
+    copying follow/utils.py -> build/lib.linux-x86_64-2.7/follow
+    copying follow/admin.py -> build/lib.linux-x86_64-2.7/follow
+    copying follow/views.py -> build/lib.linux-x86_64-2.7/follow
+    creating build/lib.linux-x86_64-2.7/example
+    copying example/__init__.py -> build/lib.linux-x86_64-2.7/example
+    copying example/settings.py -> build/lib.linux-x86_64-2.7/example
+    copying example/urls.py -> build/lib.linux-x86_64-2.7/example
+    copying example/manage.py -> build/lib.linux-x86_64-2.7/example
+    creating build/lib.linux-x86_64-2.7/follow/templatetags
+    copying follow/templatetags/__init__.py -> build/lib.linux-x86_64-2.7/follow/templatetags
+    copying follow/templatetags/follow_tags.py -> build/lib.linux-x86_64-2.7/follow/templatetags
+    creating build/lib.linux-x86_64-2.7/example/app
+    copying example/app/tests.py -> build/lib.linux-x86_64-2.7/example/app
+    copying example/app/models.py -> build/lib.linux-x86_64-2.7/example/app
+    copying example/app/__init__.py -> build/lib.linux-x86_64-2.7/example/app
+    copying example/app/views.py -> build/lib.linux-x86_64-2.7/example/app
+    running egg_info
+    writing django_follow.egg-info/PKG-INFO
+    writing top-level names to django_follow.egg-info/top_level.txt
+    writing dependency_links to django_follow.egg-info/dependency_links.txt
+    warning: manifest_maker: standard file '-c' not found
+    
+    reading manifest file 'django_follow.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    writing manifest file 'django_follow.egg-info/SOURCES.txt'
+    creating build/lib.linux-x86_64-2.7/follow/templates
+    creating build/lib.linux-x86_64-2.7/follow/templates/follow
+    copying follow/templates/follow/form.html -> build/lib.linux-x86_64-2.7/follow/templates/follow
+    running install_lib
+    creating /usr/local/lib/python2.7/dist-packages/follow
+    error: could not create '/usr/local/lib/python2.7/dist-packages/follow': Permission denied
+    Complete output from command /usr/local/bin/python2.7 -c "import setuptools, tokenize;__file__='/tmp/pip_build_pakumar1/django-follow/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-1RBMgE-record/install-record.txt --single-version-externally-managed --compile:
+    running install
+
+running build
+
+running build_py
+
+creating build
+
+creating build/lib.linux-x86_64-2.7
+
+creating build/lib.linux-x86_64-2.7/follow
+
+copying follow/registry.py -> build/lib.linux-x86_64-2.7/follow
+
+copying follow/tests.py -> build/lib.linux-x86_64-2.7/follow
+
+copying follow/signals.py -> build/lib.linux-x86_64-2.7/follow
+
+copying follow/models.py -> build/lib.linux-x86_64-2.7/follow
+
+copying follow/__init__.py -> build/lib.linux-x86_64-2.7/follow
+
+copying follow/urls.py -> build/lib.linux-x86_64-2.7/follow
+
+copying follow/utils.py -> build/lib.linux-x86_64-2.7/follow
+
+copying follow/admin.py -> build/lib.linux-x86_64-2.7/follow
+
+copying follow/views.py -> build/lib.linux-x86_64-2.7/follow
+
+creating build/lib.linux-x86_64-2.7/example
+
+copying example/__init__.py -> build/lib.linux-x86_64-2.7/example
+
+copying example/settings.py -> build/lib.linux-x86_64-2.7/example
+
+copying example/urls.py -> build/lib.linux-x86_64-2.7/example
+
+copying example/manage.py -> build/lib.linux-x86_64-2.7/example
+
+creating build/lib.linux-x86_64-2.7/follow/templatetags
+
+copying follow/templatetags/__init__.py -> build/lib.linux-x86_64-2.7/follow/templatetags
+
+copying follow/templatetags/follow_tags.py -> build/lib.linux-x86_64-2.7/follow/templatetags
+
+creating build/lib.linux-x86_64-2.7/example/app
+
+copying example/app/tests.py -> build/lib.linux-x86_64-2.7/example/app
+
+copying example/app/models.py -> build/lib.linux-x86_64-2.7/example/app
+
+copying example/app/__init__.py -> build/lib.linux-x86_64-2.7/example/app
+
+copying example/app/views.py -> build/lib.linux-x86_64-2.7/example/app
+
+running egg_info
+
+writing django_follow.egg-info/PKG-INFO
+
+writing top-level names to django_follow.egg-info/top_level.txt
+
+writing dependency_links to django_follow.egg-info/dependency_links.txt
+
+warning: manifest_maker: standard file '-c' not found
+
+
+
+reading manifest file 'django_follow.egg-info/SOURCES.txt'
+
+reading manifest template 'MANIFEST.in'
+
+writing manifest file 'django_follow.egg-info/SOURCES.txt'
+
+creating build/lib.linux-x86_64-2.7/follow/templates
+
+creating build/lib.linux-x86_64-2.7/follow/templates/follow
+
+copying follow/templates/follow/form.html -> build/lib.linux-x86_64-2.7/follow/templates/follow
+
+running install_lib
+
+creating /usr/local/lib/python2.7/dist-packages/follow
+
+error: could not create '/usr/local/lib/python2.7/dist-packages/follow': Permission denied
+
+----------------------------------------
+Cleaning up...
+  Removing temporary dir /tmp/pip_build_pakumar1...
+Command /usr/local/bin/python2.7 -c "import setuptools, tokenize;__file__='/tmp/pip_build_pakumar1/django-follow/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-1RBMgE-record/install-record.txt --single-version-externally-managed --compile failed with error code 1 in /tmp/pip_build_pakumar1/django-follow
+Exception information:
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/pip/basecommand.py", line 122, in main
+    status = self.run(options, args)
+  File "/usr/local/lib/python2.7/dist-packages/pip/commands/install.py", line 283, in run
+    requirement_set.install(install_options, global_options, root=options.root_path)
+  File "/usr/local/lib/python2.7/dist-packages/pip/req.py", line 1435, in install
+    requirement.install(install_options, global_options, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/pip/req.py", line 706, in install
+    cwd=self.source_dir, filter_stdout=self._filter_install, show_stdout=False)
+  File "/usr/local/lib/python2.7/dist-packages/pip/util.py", line 697, in call_subprocess
+    % (command_desc, proc.returncode, cwd))
+InstallationError: Command /usr/local/bin/python2.7 -c "import setuptools, tokenize;__file__='/tmp/pip_build_pakumar1/django-follow/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /tmp/pip-1RBMgE-record/install-record.txt --single-version-externally-managed --compile failed with error code 1 in /tmp/pip_build_pakumar1/django-follow
